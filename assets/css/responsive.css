@@ -1,0 +1,87 @@
+@media screen and (max-width:1024px) {
+    .navigation .dropdown .dropdown-menu{
+        position:static !important;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 1;
+        visibility: inherit;
+    }
+    .navigation .dropdown .dropdown-menu.active,
+    .navigation .dropdown .dropdown-menu.active2{
+        max-height: 300px;
+        opacity: 1;
+    }
+    .nav-icon {
+        width:40px;
+        height:40px;
+        background-color: #f7f7f7;
+        padding: 5px;
+        border-radius:5px;
+        background-image: url('../img/bar.png');
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        display: block;
+      }
+      .nav-icon.active{
+          background-image: url('../img/close.png');
+      }
+      .navigation{
+          padding:10px  0;
+      }
+      #toggleMenu{
+          height: 0;
+      }
+      #toggleMenu.active{
+          height: 100vh;
+      }
+.navigation nav > ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 63px;
+    background: #000000bd;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  .navigation nav ul li {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .navigation nav ul li a {
+    padding: 8px 0;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width:991px) {
+    .img-box{
+        flex-basis: 33.33%;
+    }
+}
+@media screen and (max-width:768px) {
+    .img-box{
+        flex-basis:100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .social-icons{
+        display: none;
+    }
+    .hero-content h1{
+        font-size:25px;
+    }
+    .hero-left img {
+        max-width: 150px;
+    }
+}
