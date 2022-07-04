@@ -91,14 +91,15 @@ $(document).ready(function() {
 // }
 
 
-var myVar;
-function myLoader() {
-  myVar = setTimeout(showPage, 2000);
-}
-function showPage() {
-  document.getElementById("preLoader").style.display = "none";
-  document.querySelector("section").style.display = "block";
-}
+
+// var myVar;
+// function myLoader() {
+//  myVar = setTimeout(showPage, 2000);
+// }
+// function showPage() {
+//  document.getElementById("preLoader").style.display = "none";
+//  document.querySelector("section").style.display = "block";
+//}
 
 // ========================== Progress bar
 window.addEventListener('load', ()=> {
